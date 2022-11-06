@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./estilo.css" />
-
+    <link rel="stylesheet" href="./css/estilo.css">
     <title>Mundo de la hamburguesa</title>
   </head>
   <body>
     <section class="hero">
       <header class="hero__header">
-        <h4 class="logo">BURGUERgi</h4>
+        <h4 class="logo"></h4>
         <div class="header__right">
-          <p>Express Delivery +1 2345 6789</p>
+          <p>Express delivery 985632147</p>
           <nav>
             <ul class="menu">
               <li class="menu__item">Inicio</li>
@@ -27,13 +26,13 @@
       <div class="hero__main">
         <div class="hero__text">
           <h4>........</h4>
-          <h2>El mundo</h2>
-          <h3>de la hamburguesa</h3>
+          <h2>Burguer</h2>
+          <h3>Parejas</h3>
         </div>
         <div class="hero__img">
           <div class="sale">
-            <p class="price">$5.<small>49 </small></p>
-            <p class="only">ONLY</p>
+            <p class="price">10.<small>49 </small></p>
+            <p class="only">solo hoy</p>
           </div>
           <img src="./imagenes/hero.png" alt="burguer" />
         </div>
@@ -41,61 +40,56 @@
     </section>
     <section class="grid">
       <div class="grid__item grid__item1">
-        <h5>TRY IT TODAY</h5>
-        <h4>MOST POPULAR BURGUER</h4>
+        <h5>Pruebalo hoy</h5>
+        <h4>Hamburguesa mas popular</h4>
       </div>
       <div class="grid__item grid__item2">
-        <h5>TRY IT TODAY</h5>
+        <h5>Pruebalo hoy</h5>
         <h4>
-          MORE FUN <br />
-          MORE TASTE
+          Mas diversion<br />
+          Mas sabor
         </h4>
       </div>
       <div class="grid__item grid__item3">
-        <h5>TRY IT TODAY</h5>
-        <h4>FRESH & CHILI</h4>
+        <h5>Pruebalo hoy</h5>
+        <h4>Fresco y caliente</h4>
       </div>
     </section>
     <section class="enjoy">
       <div class="titles">
-        <h4>ALWAYS TASTY BUEGUER</h4>
-        <h2>CHOOSE & ENDOY</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          recusandae natus corporis harum dolorem eius possimus voluptate
-          accusantium! Voluptates numquam quia nam consectetur, debitis quasi
-          beatae tempore tenetur doloremque. Aliquam.
+        <h4>Siempre sabrosas hamburguesas</h4>
+        <h2>Elige y disfruta</h2>
+        <p>Nuestras hamburguesas son muy sabrosas , estan hechas todo de manera artesanal y con ingredientes de primera calidad, somos el mejor lugar  para disfrutar con  tu pareja , tu novia , tu toxica ,  ven y prueba una de nuestras especialidades
         </p>
       </div>
-      <div class="cards">
+      <div class="cards" id="cards">
         <div class="card">
           <img src="./imagenes/enjoy1.png" alt="burguer" />
-          <h4>LOREM IPSUM DOLOR</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur.</p>
-          <button> Comprar ahora</button> 
+          <h4>La ´Toxica´</h4>
+          <p>Esta hamburguesa esta hecha especial para ella, ya que sabemos que siempre le gusta comer.</p>
+          <button class="guy1"> Comprar ahora</button> 
         </div>
         <div class="card">
           <img src="./imagenes/enjoy2.png" alt="burguer" />
-          <h4>LOREM IPSUM DOLOR</h4>
-          <p>Lorem ipsum dolor sit amet consectetur .</p>
-          <button>Comprar ahora</button>
+          <h4>La ´No se elige tu´</h4>
+          <p>Esta hamburguesa esta hecha especialmente para cuando no saben que quieren comer</p>
+          <button class="guy2">Comprar ahora</button>
         </div>
         <div class="card">
           <img src="./imagenes/enjoy3.png" alt="burguer" />
-          <h4>LOREM IPSUM DOLOR</h4>
-          <p>Lorem ipsum dolor sit amet consectetur..</p>
-          <button>Comprar ahora</button>
+          <h4>La ´Inocente´</h4>
+          <p>Esta hamburguesa esta hecha especialmente para las que nunca cometen errores </p>
+          <button class="guy3">Comprar ahora</button>
         </div>
       </div>
     </section>
     <section class="discover">
       <div class="discover__div">
         <div class="discover__text">
-          <h5>DISCOVER</h5>
-          <h4>UPCOMING EVENTS</h4>
+          <h5>Descubre</h5>
+          <h4>Proximamente</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rem
-            suscipit accusamus consectetur quasi ad.
+           Muy pronto estaremos sacando nuevas hamburguesas , no dejes de estar al pendiente de nosotros , te esperan muchas sorpresas.
           </p>
           <div class="dots">
             <div class="dot"></div>
@@ -111,40 +105,40 @@
 
     <section class="reservation">
       <div class="reservation__heading">
-        <h5>RESERVATION</h5>
-        <h4>BOOK YOUR TABLE</h4>
+        <h5>Reservacion</h5>
+        <h4>Llena tus datos para poder reservar tu mesa</h4>
       </div>
       <form class="reservation__form">
-        <input class="name" type="text" placeholder="name" name="name" />
+        <input class="name" type="text" placeholder="Nombre" name="name" />
         <input class="email" type="text" placeholder="email" name="email" />
         <input class="date" type="date" placeholder="date" name="date" />
         <input class="time" type="time" name="time" placeholder="time" />
         <input class="people" type="text" placeholder="people" name="peple" />
-        <input class="button" type="button" value="Find a table" />
+        <input class="button" id="form" type="button" value="Find a table" />
       </form>
     </section>
     <footer>
       <div class="footer">
         <div class="footer__top">
           <div>
-            <h2>BURGUER HOUSE</h2>
+            <h2>BURGUER Parejas</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Temporibus, voluptatibus?
+            No solo ofrecemos deliciosas hamburguesas , tambien hacemos que tengan una experiencia divertida
             </p>
           </div>
           <div class="adress">
-            <p>MARIN ROAD,BUILDING NAME COUNTRY <br> INFO@COMPANYNAME.COM</p>
+            <p>Estamos en lima , Peru <br> soytoxica@gmail.com</p>
           </div>
         </div>
         <div class="footer__bottom">
-          <p>© COMPANY NAME 2022. ALL RIGHT RESERVED</p>
+          <p>© Burguer parejas. Todos los derechos reservados</p>
           <div>iconos</div>
         </div>
       </div>
       
        
     </footer>
-    <script src="./app.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

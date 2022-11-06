@@ -10,7 +10,7 @@
 }
 
 .hero{
-    background-image: url(./imagenes/hero-pattern.jpg);
+    background-image: url(../imagenes/hero-pattern.jpg);
 }
 .hero__header{
 display: flex; 
@@ -172,17 +172,17 @@ padding-inline: 6rem;
 }
 .grid__item1{
     grid-area: item1;
-    background-image: url("./imagenes/grid-big.webp");
+    background-image: url("../imagenes/grid-big.webp");
 
 
 }
 .grid__item2{
     grid-area: item2;
-    background-image: url("./imagenes/grid-small1.webp");
+    background-image: url("../imagenes/grid-small1.webp");
 }
 .grid__item3{
     grid-area: item3;
-    background-image: url("./imagenes/grid-small2.jpg"); 
+    background-image: url("../imagenes/grid-small2.jpg"); 
 }
 .enjoy{
     padding: 6rem;
@@ -213,6 +213,8 @@ padding-inline: 6rem;
 }
 .cards{
     display: flex;
+    align-items: flex-end;
+
 }
 .card{
     flex: 1;
@@ -223,7 +225,7 @@ padding-inline: 6rem;
 }
 
 .card img {
-    max-width: 100%;
+    max-width: 90%;
     animation: move-vector 4s linear infinite ;
 }
 
@@ -260,6 +262,12 @@ padding-inline: 6rem;
     color: white;
     border: none;
 }
+
+.card button:hover{
+    background-color: #44270f;
+}
+
+
 .discover{
 padding-top: 0;
  padding: 7rem;
@@ -392,7 +400,7 @@ footer{
 .footer{
     display: flex;
     flex-direction: column;
-    background-image: url("./imagenes/footer.jpg");
+    background-image: url("../imagenes/footer.jpg");
     background-size: cover;
     background-position: center;
     padding: 2rem;
