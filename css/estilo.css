@@ -46,6 +46,25 @@ gap:1rem;
    
 }
 
+#boton-carrito {
+    border: none;
+    color: royalblue;
+    font-size: 40px;
+    background-color:rgb(223,196,43) ;
+    width: 80px;
+    transition: all .3s;
+}
+#boton-carrito:hover {
+    cursor: pointer;
+    background-color: #44270f23;
+
+}
+#boton-carrito:focus {
+    outline: none;
+}
+
+
+
 .hero__main{
 display: flex;
 padding-inline: 6rem;
@@ -228,6 +247,11 @@ padding-inline: 6rem;
     max-width: 90%;
     animation: move-vector 4s linear infinite ;
 }
+.titulo, .texto{
+    color: white !important;
+}
+
+
 
 @keyframes move-vector{
     0%{
