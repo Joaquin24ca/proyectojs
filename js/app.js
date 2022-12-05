@@ -1,10 +1,5 @@
-const saludo =document.querySelector(".hero__text h4")
-const nombreUsuario =  prompt("Para una mejor experiencia , ingrese sus datos por")
 
-saludo.innerText = `Un placer atenderte ${nombreUsuario}, bienvenid@ y espero disfrutes en....`;
-
-
-
+//Alert de formulario
 const formulario =document.querySelector("#form")
 formulario.addEventListener("click", () => {
     Swal.fire(
@@ -29,7 +24,7 @@ document.addEventListener("DOMContentLoaded",() => {
         actualizarCarrito()
     }
 })
-
+ // Cards renderizadas
 nuevosProductos.forEach((_producto) => {
     const nuevaCard = document.createElement(`div`)
 
@@ -46,9 +41,10 @@ nuevosProductos.forEach((_producto) => {
 
    const boton = document.getElementById(`agregar${_producto.id}`)
    boton.addEventListener("click",() => {
-    agregarAlcarrito(_producto.id)
+    agregarAlcarrito(_producto.nuevosProductos)
 
    })
+   // Alert de compras
 boton.addEventListener("click",()=>{
     Swal.fire(
         {
