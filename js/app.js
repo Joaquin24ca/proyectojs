@@ -72,12 +72,25 @@ boton.addEventListener("click",()=>{
 })
 
 const agregarAlcarrito = (prodId) => {
+
+    const existe = carrito.some (prod => prod.id === prodId) 
+
+    if (existe){ 
+        const prod = carrito.map (prod => { 
+            if (prod.id === prodId){
+                prod.cantidad++
+            }
+        })
+    } else{
+
     const item = nuevosProductos.find((prod) => prod.id === prodId)
     carrito.push(item)
-    actualizarCarrito()
-
+    
+    console.log(carrito)
+   
    
 }
+ actualizarCarrito()}
 
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)
